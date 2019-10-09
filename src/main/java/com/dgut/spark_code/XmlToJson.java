@@ -7,8 +7,7 @@ import org.apache.spark.sql.api.java.UDF1;
 public class XmlToJson implements UDF1<String, String> {
     @Override
     public String call(String xml) throws Exception {
-        JSONObject json = XmlUtil.xmlToJson(xml.replaceAll("\r|\n","").getBytes());
-        System.out.println(json);
+        JSONObject json = XmlUtil.xmlToJson(xml);
         return json.toJSONString();
     }
 }

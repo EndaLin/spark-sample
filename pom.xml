@@ -31,7 +31,6 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
-            <scope>test</scope>
         </dependency>
 
         <!-- 引入Hadoop -->
@@ -107,7 +106,7 @@
                     <archive>
                         <manifest>
                             <!--运行jar包时运行的主类，要求类全名-->
-                            <mainClass>com.dgut.spark_stream.App</mainClass>
+                            <mainClass>com.dgut.spark_stream.FileStreaming</mainClass>
                             <!-- 是否指定项目classpath下的依赖 -->
                             <addClasspath>true</addClasspath>
                             <!-- 指定依赖的时候声明前缀 -->
