@@ -1,20 +1,16 @@
 package com.dgut;
 
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
-
 /**
  * Unit test for simple FileStreaming.
  */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+public class AppTest {
+    volatile int i;
+
+    public void add () {
+        this.i++;
+    }
+
+    public static void main(String[] args) {
+
     }
 }
